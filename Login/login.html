@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Lines 13 to 17 are CSS-->
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <style>
+    body {
+        background-image: url(../pasta.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+  </style>
+</head>
+
+<body>
+  <li><a href="../index.html">Home</a> </li>
+    <section class="vh-100" >
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card shadow-2-strong bg-transparent text-dark" style="border-radius: 5rem;">
+              <div class="card-body p-5 text-center">
+    
+                <h3 class="mb-5">Sign in</h3>  <!-- Created the main heading of the login page-->
+    
+                <div class="form-outline mb-4">
+                  <input type="text" id="userName" class="form-control form-control-lg" placeholder="UserName"/>  <!-- Created the box for the username input using Bootstrap-->
+                
+                </div>
+    
+                <div class="form-outline mb-4">
+                  <input type="password" id="password" class="form-control form-control-lg" placeholder="Password"/> <!-- Created the box for the password input using Bootstrap-->
+                </div>
+    
+              
+                <div class="form-check d-flex justify-content-start mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                  <label class="form-check-label" for="form1Example3" style="color: white;">Remember password </label> <!-- Created a small icon in which the user can click if they want their password remembered-->
+                </div>
+    
+                <button class="btn btn-primary btn-lg btn-block" id="login">Login</button> <!-- Created the submit button using Bootstrap-->
+    
+                <hr class="my-4">
+    
+                <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"    
+                  type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button> <!-- Createdthe button for signing in with google-->
+                <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
+                  type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button> <!-- Created the button for signing in with facebook-->
+                 <!-- Lines 52 and 54 have set the colour of the buttons-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./login.js"></script> <!-- This is the associated JavaScript code-->
+</body>
+
+</html>
